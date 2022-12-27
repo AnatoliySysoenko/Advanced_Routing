@@ -1,10 +1,10 @@
 <div>
   <h2>Selected Phrase Details</h2>
 
-  <ng-container *ngIf="authService.isLoggedIn; then isAuth; else isNotAuth"></ng-container>
-
   <div>ID: {{phrase.id}}</div>
 
+  <ng-container *ngIf="authService.isLoggedIn; then isAuth; else isNotAuth"></ng-container>
+  
   <div class="btn-group">
     <button (click)="goToPhrasesList()" type="button">Go to Phrases List</button>
   </div>
