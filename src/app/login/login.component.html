@@ -1,1 +1,22 @@
-<p>login works!</p>
+<h2>Login</h2>
+
+<p>{{message}}</p>
+
+<form [formGroup]="userForm">
+  <div>
+    <div>
+      <label for="login">Login</label>
+      <input [value]="user.login" formControlName="login" id="login" placeholder="Введите свой логин..." type="text">
+    </div>
+    <div>
+      <label for="password">Login</label>
+      <input [value]="user.password" formControlName="password" id="password" placeholder="Введите свой пароль..."
+             type="password">
+    </div>
+  </div>
+</form>
+
+<div class="btn-group">
+  <button (click)="login()" type="button">Login</button>
+  <button (click)="logout()" type="button">Logout</button>
+</div>

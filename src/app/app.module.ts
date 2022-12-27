@@ -7,18 +7,21 @@ import { HomeComponent } from './home/home.component';
 import { PhrasesModule } from './phrases/phrases.module';
 import { AdminModule } from './admin/admin.module';
 import { LoginComponent } from './login/login.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     PhrasesModule,
-    AdminModule
+    AdminModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
